@@ -1,0 +1,70 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+    font-family: sans-serif;
+}
+body{
+    background-color: black;
+}
+div{
+    margin-bottom: -4px;
+}
+div.brick{
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    background-color: blue;
+}
+div.row{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+div.row div{
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+}
+div.coin{
+    background: url('images/coin.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+div.cherry{
+    background: url('images/cherry.png');
+    height: 20px;
+    width: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+div#pacman{
+    height: 20px;
+    width: 20px;
+    background: url('images/pacman.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+div.empty{
+
+}
+#score{
+    width: 30px;
+    height: 30px;
+    margin-top: 2em;
+    margin-left: 2em;
+    color: aqua;
+}
+div.ghost{
+    background: url('images/ghost.gif');
+    height: 20px;
+    width: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

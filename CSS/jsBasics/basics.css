@@ -1,0 +1,52 @@
+#banner h1 {
+    height: 70px;
+    width: 95%;
+    line-height: 70px;
+    display: block;
+    background-color: red;
+    text-align: left;
+    padding: 10px;
+    border-radius: 25px;
+    margin: 10px;
+}
+#navbox {
+    display: inline-block;
+    height: 250px;
+    width: 20%;
+    background-color: rgb(74, 196, 190);
+    border-radius: 25px;
+    margin-left: 10px;
+    margin-top: 20px;
+    vertical-align: top;
+    }
+a{
+    color: rgb(31, 128, 128);
+}
+#main {
+    display: inline-block;
+    height: 750px;
+    width: 70%;
+    background-color: rgb(3, 24, 43);
+    border-radius: 25px;
+    margin-left: 25px;
+    margin-top: 20px;
+    color: rgb(86, 104, 104);
+    padding: 20px;
+}
+
+#footer {
+    background-color: grey;
+    border-radius: 25px;
+    height: 50px;
+    width: 95%;
+    line-height: 50px;
+    margin: 10px;
+    padding-left: 10px;
+}
+em {
+    color: rgb(20, 95, 165);
+    font-style: normal;
+}
+#home {
+    list-style-type: none;
+}

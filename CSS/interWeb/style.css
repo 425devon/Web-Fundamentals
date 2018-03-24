@@ -1,0 +1,219 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+}
+div{
+    border: 1px solid rgba(253, 253, 253, 0);
+}
+.container{
+    width: 970px;
+    height: 1080px;
+}
+.header{
+    height: 150px;
+    width: 970px;
+}
+.header figure{
+    position: absolute;
+    top: 15px;
+}
+.header figcaption{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 30px;
+    padding-top: 10px;
+}
+figcaption span{
+    color: #26659e;
+}
+
+#globe{
+    width: 100px;
+}
+#banner{
+    margin-top: 95px;
+    height: 30px;
+    background-color: #326ea2;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    color: white;
+}
+.sideTop{
+    width: 250px;
+    height: 225px;
+    display: inline-block;
+    border-bottom: 2px solid gray;
+}
+.sideTop h3{
+    padding-top: 15px;
+}
+.sideTop h3 span{
+    color: red;
+}
+.sideTop p span{
+    color:rgb(124, 190, 231);
+}
+.sideTop h3,p,button{
+    padding-left: 5px;
+}
+#video{
+    color: white;
+    margin-top: 10px;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px black;
+    background-color: #4a84b5;
+}
+#resource{
+    color: white;
+    margin-top: 5px;
+    padding-left: 30px;
+    padding-right: 37px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px black;
+    background-color: #ed9224;
+}
+.subHead{
+    width: 710px;
+    height: 55px;
+    display: inline-block;
+    vertical-align: top;
+    border-bottom: 2px solid gray;
+}
+#pHome{
+    width: 25px;
+}
+#home figcaption{
+    display: inline-block;
+    color:rgb(124, 190, 231);
+}
+#phone{
+    display: inline-block;
+    margin-left: 525px;
+    margin-top: -30px;
+}
+#pPic{
+    width: 35px;
+    padding-right: 5px;
+    display: inline-block;
+}
+#phone figcaption{
+    display: inline-block;
+}
+#phone ul{
+    list-style: none;
+}
+#call{
+    color: #04aeda;
+}
+
+.sideBottom{
+    width: 250px;
+    height: 275px;
+    margin-top: 25px;
+    display: inline-block;;
+    vertical-align: top;
+   
+}
+#addback{
+   position: relative;
+    width: 230px;
+    height: 275px;
+}
+#ninja{
+    position: relative;
+    height: 125px;
+    top: -185px;
+    left: 70px;
+}
+#career{
+    position:relative;
+    top: -425px;
+    left: -5px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+#learn{
+    position: relative;
+    top: -185px;
+    left: 15px;
+    color: white;
+    padding-top: 8px;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-bottom: 8px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px black;
+    background-color: #59ccdf;
+}
+
+.server{
+    width: 710px;
+    height: 170px;
+    margin-top: -170px;
+    display: inline-block;
+    vertical-align: top;
+}
+.server h3{
+    color: #22649e;
+}
+.server span{
+    color: #20a0ff;
+}
+.server ul{
+    margin-left: 45px;
+}
+#client{
+    height: 125px;
+    position: relative;
+    top: -320px;
+    left: 445px;
+}
+.explain{
+    width: 710px;
+    height: 300px;
+    margin-left: 260px;
+    margin-top: -325px;
+    display: inline-block;
+    vertical-align: top;
+}
+.foot{
+    width: 710px;
+    height: 95px;
+    margin-left: 260px;
+    margin-top: -180px;
+    display: inline-block;
+    vertical-align: top;
+    border-left: 5px solid #0085e0;
+    border-top: 5px solid #0085e0;
+    border-right: 5px solid #0085e0;
+}
+.explain h3{
+    color: #22649e;
+}
+.explain span{
+    color: #04aeda;
+}
+.explain ol{
+    margin-left: 45px;
+}
+#html{
+    width: 100px;
+    padding-top: 10px;
+}
+.foot h3{
+    color: #22649e;
+    margin-left: 110px;
+    margin-top: -85px;
+}
+.foot p{
+    margin-left: 110px;
+}
+.foot span{
+    color: #04aeda;
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Air Masta</title>
+</head>
+<body>
+	<style type="text/css">
+		#ocean{
+			background-image: url("city.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+		
+			width: 900px;
+			height: 700px;
+		}
+		#button{
+			position: fixed;
+			left: 400px;
+			top: 20px;
+		}
+		button {
+			width: 75px;
+			height: 40px;
+			position: center;
+			background: red;
+			border: 2px solid black;
+			box-shadow: 3px 3px 3px;
+		}
+		button:hover {
+			background: green;
+			opacity: 0.85;
+		}
+		#score{
+			position: fixed;
+			top: 20px;
+			left: 20px;
+			font-size: 20px;
+		}
+		.player{
+			position: absolute;	
+			width: 70px;
+			height: 75px;
+			background-image: url("player.png")
+		}
+		.enemy{
+			position: absolute;	
+			width: 70px;
+			height: 75px;
+			background-image: url("enemy.png")
+		}
+		.missle{
+			position: absolute;
+			background-color: rgb(161, 12, 12);
+			width: 4px;
+			height: 12px;
+		}
+	</style>
+	<div id="ocean">
+	<div id="button"></div>
+	<div id="score"><strong></strong></div>
+	<div id="players"></div>
+	<div id="enemies"></div>
+	<div id="missles"></div>
+	</div>
+
+
+
+
+
+	<script type="text/javascript">
+	var player = {
+		left: 450,
+		top: 620,
+	}
+
+	var enemies = [
+		{left:25, top:35},
+		{left: 50, top: 80},
+		{left: 185, top: 150},
+		{left:235,top:75},
+		{left:295,top:35},
+		{left:535,top:125},
+		{left:650,top:150},
+	];
+
+	var score = 0;
+
+	var missles = [];
+
+	function drawPlayer(){
+		var content = "";
+		content = "<div class='player' style='left:"+ player.left +"px; top:"+ player.top +"px'></div>"; 
+		
+		document.getElementById("players").innerHTML = content;
+	}
+	
+	function drawEnemies(){
+		content = "";
+		for(var ind = 0; ind < enemies.length; ind++){
+			content += "<div class='enemy' style='left:"+ enemies[ind].left +"px; top:"+ enemies[ind].top +"px'></div>"; 
+		}
+		document.getElementById("enemies").innerHTML = content;
+	}
+	function drawMissles(){
+		content = "";
+		for(var ind = 0; ind < missles.length; ind++){
+			content += "<div class='missle' style='left:" + missles[ind].left + "px; top:"+ missles[ind].top +"px'></div>"
+		}
+		document.getElementById("missles").innerHTML = content
+	}
+	
+	function moveEnemies(){
+		for(var ind = 0; ind < enemies.length; ind++){
+			if(enemies[ind].top < 700){
+			enemies[ind].top = enemies[ind].top + 1;
+			}
+		}
+    };
+
+	function moveMissles(){
+		for(var ind = 0; ind < missles.length; ind++){
+			if(missles[ind].top < 700){
+			missles[ind].top = missles[ind].top - 5;
+			};
+		}
+    };
+
+	document.onkeydown = function(e){
+		console.log(e.which);
+		if(e.keyCode === 37 && player.left > 0){ //left
+			player.left = player.left - 10;
+		}
+		if(e.keyCode === 39 && player.left < 830){ //right
+			player.left = player.left + 10;
+		}
+		if(e.keyCode === 38 && player.top > 325){ //up
+			player.top = player.top - 10;
+		}
+		if(e.keyCode === 40 && player.top < 630){ //down
+			player.top = player.top + 10;
+		};
+		if(e.keyCode === 32){ //fire
+			missles.push({left: (player.left + 34), top: (player.top -8)})
+			drawMissles();
+		}
+		drawPlayer();
+	};
+	
+	function updateScore(){
+		document.getElementById('score').innerHTML = "SCORE:" + score;
+	}
+		
+	function gameLoop(){
+		//console.log("game loop is running!")
+		drawPlayer();
+		moveEnemies();
+		drawEnemies();
+		moveMissles();
+		drawMissles();
+		updateScore();
+		setTimeout(gameLoop, 10)
+	};
+	var button = document.createElement("button");
+		button.innerHTML = "START";
+		document.getElementById("button").appendChild(button);	
+		button.addEventListener ("click", function() {
+		button.style.display = 'none'
+		gameLoop();
+		});
+			
+		
+		
+	</script>
+</body>
+</html>

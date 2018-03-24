@@ -1,0 +1,9 @@
+.wrapper{
+    width: 970px;
+}
+ul{
+    list-style: none;
+}
+li{
+    display: inline-block;
+}

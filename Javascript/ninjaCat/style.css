@@ -1,0 +1,18 @@
+*{
+    margin: 0 auto;
+    border: 0;
+    padding: 0;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 1em;
+}
+.box{
+    width: 180px;
+    height: 55px;
+    border: 1px solid black;
+}
+#b0{
+    height: 47px;
+}
